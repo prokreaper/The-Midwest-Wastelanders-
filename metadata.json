@@ -1,0 +1,6 @@
+{
+  "name": "Apex Striker",
+  "description": "Street Fight Club underground fighting game featuring brutal combat mechanics, arterial blood splatters and pooling stains, bone-crunching strikes, video poster artwork, and deep character breakdown lab with anatomy, hurtboxes, frame data, and combo trials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
