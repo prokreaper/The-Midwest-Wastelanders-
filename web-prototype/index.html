@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K.REAPER PROJEKT — Character Select</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <div class="bg-grid"></div>
+    <div class="bg-smoke"></div>
+    <div class="scanlines"></div>
+    <header class="top-bar">
+      <div class="logo">
+        <span class="logo-main">K.REAPER</span>
+        <span class="logo-sub">PROJEKT</span>
+      </div>
+      <div class="mode-label">CHARACTER SELECT</div>
+      <div class="version">S.F.F. CLUB // BUILD 0.3.1</div>
+    </header>
+    <main class="select-stage">
+      <div class="char-panel" id="panel-kryss" data-char="kryss">
+        <div class="panel-frame">
+          <div class="char-portrait">
+            <img src="assets/kryss_reaper.jpg" alt="Kryss Reaper" class="portrait-img">
+            <div class="char-tag">PLAYER ONE</div>
+          </div>
+          <div class="char-info">
+            <h2 class="char-name">KRYSS REAPER</h2>
+            <p class="char-title">WASTELAND EXECUTIONER</p>
+            <div class="stat-row"><span>STYLE</span><span>BRUTAL / CLOSE</span></div>
+            <div class="stat-row"><span>SPECIAL</span><span>SHADOW FINISHERS</span></div>
+            <div class="stat-row"><span>WEAPON</span><span>IMPROVISED + BONE</span></div>
+            <p class="char-bio">Dark. Sarcastic. Unpredictable. Heavy strikes, supernatural edges, and finishers that leave nothing standing.</p>
+          </div>
+          <button class="select-btn" data-char="kryss">SELECT</button>
+        </div>
+      </div>
+      <div class="vs-divider">
+        <div class="vs-circle">VS</div>
+        <div class="vs-line"></div>
+      </div>
+      <div class="char-panel" id="panel-nyxzara" data-char="nyxzara">
+        <div class="panel-frame">
+          <div class="char-portrait">
+            <img src="assets/nyxzara_voss.jpg" alt="Nyxzara Voss" class="portrait-img">
+            <div class="char-tag">PLAYER TWO</div>
+          </div>
+          <div class="char-info">
+            <h2 class="char-name">NYXZARA VOSS</h2>
+            <p class="char-title">SHADOW RAZOR</p>
+            <div class="stat-row"><span>STYLE</span><span>FAST / EVASIVE</span></div>
+            <div class="stat-row"><span>SPECIAL</span><span>GREEN ENERGY</span></div>
+            <div class="stat-row"><span>WEAPON</span><span>PRECISION + LASER</span></div>
+            <p class="char-bio">Confident. Dangerous. Intelligent. Acrobatics, precision strikes, and toxic green energy abilities.</p>
+          </div>
+          <button class="select-btn" data-char="nyxzara">SELECT</button>
+        </div>
+      </div>
+    </main>
+    <footer class="bottom-bar">
+      <div class="hint">← → TO HIGHLIGHT &nbsp;|&nbsp; ENTER TO CONFIRM &nbsp;|&nbsp; ESC BACK</div>
+      <div class="selected-display" id="selected-display">NO CHARACTER SELECTED</div>
+      <button class="proceed-btn" id="proceed-btn" disabled>ENTER S.F.F. CLUB</button>
+    </footer>
+  </div>
+  <script src="js/characters.js"></script>
+  <script src="js/select.js"></script>
+</body>
+</html>
